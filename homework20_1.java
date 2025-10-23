@@ -23,12 +23,14 @@ public class homework20_1
       int[] exVals1 = {1,2,3,3,5};
       int[] exVals2 = {1,1,1,2,3};
       //int[] exVals3 = new int[100];
-      
+
+      /*
       for(int i = 0; i<exVals3.length;i++){
          exVals3[i] = i%10;
       }
       ExchangeSort(exVals3);
-
+      */
+      
       LinkedList llist = new LinkedList();
       llist.head = new ListNode(exVals1[0]);
 
