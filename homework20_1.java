@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /*
 Given a sorted linked list, delete all nodes that have duplicate
 numbers, leaving only distinct numbers from the original list.In this 
@@ -19,6 +20,7 @@ public class homework20_1
 {
    public static void main(String[] args)
    {
+      Scanner sc = new Scanner(System.in);
       //add your code here
       int[] exVals1 = {1,2,3,3,5};
       int[] exVals2 = {1,1,1,2,3};
@@ -32,26 +34,24 @@ public class homework20_1
       */
       
       LinkedList llist = new LinkedList();
-      llist.head = new ListNode(exVals1[0]);
+      llist.head = new ListNode(sc.nextInt());
 
       ListNode head = llist.head;
       for(int i = 1; i<exVals1.length; i++){
-         head.next = new ListNode(exVals1[i]);
+         head.next = new ListNode(sc.nextInt());
          head = head.next;
       }
 
-      System.out.println(llist);
       deleteDuplicates(llist);
       System.out.println(llist);
 
 
-      llist.head = new ListNode(exVals2[0]);
+      llist.head = new ListNode(sc.nextInt());
       head = llist.head;
       for(int i = 1; i<exVals2.length; i++){
-         head.next = new ListNode(exVals2[i]);
+         head.next = new ListNode(sc.nextInt());
          head = head.next;
       }
-      System.out.println(llist);
       deleteDuplicates(llist);
       System.out.println(llist);
       /*
