@@ -22,8 +22,8 @@ public class homework20_1
    {
       Scanner sc = new Scanner(System.in);
       //add your code here
-      int[] exVals1 = {1,2,3,3,5};
-      int[] exVals2 = {1,1,1,2,3};
+      int[] exVals1 = {1,2,2,7,8};//this is the autograder's input
+      int[] exVals2 = {1,1,1,1,2};//this is the autograder's input
       //int[] exVals3 = new int[100];
 
       /*
@@ -34,11 +34,11 @@ public class homework20_1
       */
       
       LinkedList llist = new LinkedList();
-      llist.head = new ListNode(sc.nextInt());
+      llist.head = new ListNode(exVals1[0]);
 
       ListNode head = llist.head;
       for(int i = 1; i<exVals1.length; i++){
-         head.next = new ListNode(sc.nextInt());
+         head.next = new ListNode(exVals1[i]);
          head = head.next;
       }
 
@@ -46,10 +46,10 @@ public class homework20_1
       System.out.println(llist);
 
 
-      llist.head = new ListNode(sc.nextInt());
+      llist.head = new ListNode(exVals2[0]);
       head = llist.head;
       for(int i = 1; i<exVals2.length; i++){
-         head.next = new ListNode(sc.nextInt());
+         head.next = new ListNode(exVals2[i]);
          head = head.next;
       }
       deleteDuplicates(llist);
