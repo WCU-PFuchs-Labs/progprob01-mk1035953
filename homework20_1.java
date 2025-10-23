@@ -22,7 +22,7 @@ public class homework20_1
       //add your code here
       int[] exVals1 = {1,2,3,3,5};
       int[] exVals2 = {1,1,1,2,3};
-      int[] exVals3 = new int[100];
+      //int[] exVals3 = new int[100];
       
       for(int i = 0; i<exVals3.length;i++){
          exVals3[i] = i%10;
@@ -52,7 +52,7 @@ public class homework20_1
       System.out.println(llist);
       deleteDuplicates(llist);
       System.out.println(llist);
-
+      /*
       llist.head = new ListNode(exVals3[0]);
       head = llist.head;
       for(int i = 1; i<exVals3.length; i++){
@@ -62,6 +62,7 @@ public class homework20_1
       System.out.println(llist);
       deleteDuplicates(llist);
       System.out.println(llist);
+      */
    }
    public static void deleteDuplicates(LinkedList llist)
    {
